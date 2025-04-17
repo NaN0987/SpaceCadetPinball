@@ -261,7 +261,9 @@ int winmain::WinMain(LPCSTR lpCmdLine)
 		if (strstr(lpCmdLine, "-demo"))
 			pb::toggle_demo();
 		else
-			pb::replay_level(false);
+			pb::mode_change(GameModes::GameOver);
+			pb::pause_continue();
+			pb::pause_continue();
 
 		MainLoop();
 
