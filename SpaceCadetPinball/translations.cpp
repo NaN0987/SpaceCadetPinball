@@ -800,7 +800,7 @@ const TextArray translations::Translations =
 			{ Lang::Danish, "F2 starter nyt spil" },
 			{ Lang::German, "F2: Neues Spiel starten" },
 			{ Lang::Greek, "F2 για να ξεκινήσετε μια νέα παρτίδα" },
-			{ Lang::English, "F2 Starts New Game" },
+			{ Lang::English, "Insert a Coin to Play" },
 			{ Lang::Spanish, "F2 inicia un nuevo juego" },
 			{ Lang::Finnish, "F2: Uusi peli" },
 			{ Lang::French, "F2 Nouvelle partie" },
