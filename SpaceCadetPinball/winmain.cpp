@@ -1312,7 +1312,10 @@ void winmain::HandleGameBinding(GameBindings binding, bool shortcut)
 		pause();
 		break;
 	case GameBindings::NewGame:
-		new_game();
+		if(pb::game_mode == GameModes::InGame)
+			pb::PushCheat("1max");
+		else
+			new_game();
 		break;
 	case GameBindings::ToggleFullScreen:
 		options::toggle(Menu1::Full_Screen);
