@@ -1334,13 +1334,13 @@ void winmain::HandleGameBinding(GameBindings binding, bool shortcut)
 		options::toggle(Menu1::Show_Menu);
 		break;
 	case GameBindings::Exit:
-		//if (!shortcut)
+		if (!shortcut)
 		{
-		SDL_Event event{SDL_QUIT};
-		SDL_PushEvent(&event);
+			SDL_Event event{SDL_QUIT};
+			SDL_PushEvent(&event);
 		}
-		//else
-		//	ShowExitPopup = true;
+		else
+			ShowExitPopup = true;
 		break;
 	default:
 		break;
